@@ -5,21 +5,32 @@ import './App.css';
 class App extends Component {
   constructor () {
     super();
+
     this.state = {
-      string: 'Hello Leiya'
+      monsters: [
+        {
+          name: 'Frankenstein',
+          id: 'asc1'
+        },
+        {
+          name: 'Dracula',
+          id: 'asc2'
+        },
+        {
+          name: 'Zombie',
+          id: 'asc3'
+        }
+      ]
     };
   }
 
   render () {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>{this.state.string}</p>
-          <button onClick={() => this.setState({ string: 'Sup Leiya'})}> 
-            Change Text
-          </button>
-        </header>
+        {
+          this.state.monsters.map(monster => 
+            <h1 key={monster.id}> {monster.name} </h1>)
+        }
       </div>
     );
   }
