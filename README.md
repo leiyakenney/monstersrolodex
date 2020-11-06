@@ -7,4 +7,4 @@ Monsters Rolodex is a React project that uses a random name and image generator 
 In the project directory, run `yarn start` and navigate to `localhost:3000`
 
 ## Production Links
-- This app and its production endpoints can be accessed [here via GitHub pages]() [here via Heroku](https://whispering-citadel-06941.herokuapp.com/)
+- This app and its production endpoints can be accessed [here via GitHub pages](https://leiyakenney.github.io/monstersrolodex/) or [here via Heroku](https://whispering-citadel-06941.herokuapp.com/)
